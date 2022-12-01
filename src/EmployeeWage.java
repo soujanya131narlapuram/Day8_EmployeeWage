@@ -6,11 +6,15 @@ public class EmployeeWage {
     int a_count = 0;//absent days count
     int ft_count = 0;//fulltime days count
     int pt_count = 0;//partTime days count
-     int Wage_per_Hour = 20;
-     int Working_Days_per_month = 20;
+     int Wage_per_Hour;
+     int Working_Days_per_month;
+     int Working_hours_per_month;
      int randomCheck;
 
-    public EmployeeWage() {
+    public EmployeeWage(int wage_per_Hour,int working_Days_per_month,int working_hours_per_month) {
+        this.Wage_per_Hour=wage_per_Hour;
+        this.Working_Days_per_month=working_Days_per_month;
+        this.Working_hours_per_month=working_hours_per_month;
     }
 
     public void calculation_of_wage()
@@ -35,7 +39,7 @@ public class EmployeeWage {
                 default:
                     System.out.println("not  usable");
             }
-            if (((ft_count + pt_count) >= Working_Days_per_month) || ((pt_count * 4 + ft_count * 8) >= 100)) {
+            if (((ft_count + pt_count) >= Working_Days_per_month) || ((pt_count * 4 + ft_count * 8) >= Working_hours_per_month)) {
                 break;
             }
             System.out.println();
@@ -52,7 +56,7 @@ public class EmployeeWage {
 
     public static void main(String[] args)
     {
-        EmployeeWage ob1=new EmployeeWage();
+        EmployeeWage ob1=new EmployeeWage(15,25,120);
         ob1.calculation_of_wage();
         ob1.DisplayResult();
     }
