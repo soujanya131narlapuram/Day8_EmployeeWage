@@ -5,7 +5,7 @@ public class EmployeeWage {
     int employee_wage_per_month;
     int a_count = 0;//absent days count
     int ft_count = 0;//fulltime days count
-    int pt_count = 0;//part time days count
+    int pt_count = 0;//partTime days count
      int Wage_per_Hour = 20;
      int Working_Days_per_month = 20;
      int randomCheck;
@@ -48,7 +48,6 @@ public class EmployeeWage {
         System.out.println("total full time days =" + ft_count);
         System.out.println("total part time days =" + pt_count);
         System.out.println("total wage per month =" + employee_wage_per_month);
-        //* Working_Days_per_month;
     }
 
     public static void main(String[] args)
