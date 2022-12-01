@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df731ed7-9c66-4913-b5c1-ddcd8edf8921" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/out/production/Day8java_employeewage_using_oops_concepts/EmployeeWage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Day8java_employeewage_using_oops_concepts/EmployeeWage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EmployeeWage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeWage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
